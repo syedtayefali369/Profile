@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles/glow.css">
+    <link rel="stylesheet" href="styles/card.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: 
+                url("data:image/svg+xml;utf8,<svg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'><rect x='0' y='0' width='40' height='40' fill='none'/><path d='M 40 0 L 0 0 L 0 40' stroke='%2333ffbb' stroke-width='0.5' opacity='0.15'/></svg>"),
+                linear-gradient(135deg, #3b5640 0%, #0c2624 100%);
+            color: #222;
+            background-size: 40px 40px, cover;
+            background-repeat: repeat, no-repeat;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, rgba(60, 101, 87, 0.95), rgba(9, 34, 23, 0.95));
+            box-shadow: 0 2px 8px rgba(16, 191, 112, 0.118);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .navbar .logo {
+            font-size: 1.7rem;
+            font-weight: bold;
+            color: #00ff9d;
+            letter-spacing: 2px;
+            text-shadow: 0 0 8px #00ff9d55;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: #0ebc71;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .navbar ul li a:hover {
+            color: #00e6ff;
+            text-shadow: 0 0 8px #00e6ff55;
+        }
+        .hero {
+            text-align: center;
+            padding: 5rem 2rem 3rem 2rem;
+            background: linear-gradient(120deg, #234c37 0%, #0c281a 100%);
+            color: #fff;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+            text-shadow: 0 0 12px #fff8;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+        }
+        .hero .cta-btn {
+            padding: 0.8rem 2rem;
+            font-size: 1.1rem;
+            background: #00ff95;
+            color: #0b2918;
+            border: none;
+            border-radius: 30px;
+            box-shadow: 0 0 16px #00e6ff88;
+            cursor: pointer;
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+        .hero .cta-btn:hover {
+            background: #00c37f;
+            box-shadow: 0 0 24px #00ff84cc;
+        }
+        .projects-section {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .projects-section h2 {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+            color: #00ffa6;
+            text-shadow: 0 0 8px #00ffa233;
+        }
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        .footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: #222;
+            color: #fff;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            margin-top: 3rem;
+        }
+        /* Responsive */
+        @media (max-width: 900px) {
+            .cards-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbar {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Portfolio</div>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="hero" id="hero">
+        <img src="assets/me.png" alt="Tayef" style="width:140px;height:140px;border-radius:50%;box-shadow:0 0 24px #00ff9d88;margin-bottom:1.5rem;">
+        <h1>Hello, I'm Tayef</h1>
+        <p>Creative Developer | Building modern, interactive web experiences.<br>
+        Passionate about UI/UX, animations, and glowing effects.</p>
+        <a href="#projects"><button class="cta-btn">View Projects</button></a>
+    </section>
+    <section class="projects-section" id="projects">
+        <h2>Featured Projects</h2>
+        <div class="cards-container">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x180/00e6ff/fff?text=Project+1" alt="Project 1">
+                <div class="card-content">
+                    <h2 class="card-title">Glowing Portfolio</h2>
+                    <p class="card-description">A modern portfolio website with glowing hover effects and interactive cards.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x180/fda085/fff?text=Project+2" alt="Project 2">
+                <div class="card-content">
+                    <h2 class="card-title">Animated Landing Page</h2>
+                    <p class="card-description">Landing page featuring smooth animations and trendy gradients.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x180/f6d365/fff?text=Project+3" alt="Project 3">
+                <div class="card-content">
+                    <h2 class="card-title">UI Components</h2>
+                    <p class="card-description">Reusable UI components with glowing and glassmorphism effects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="footer">
+        &copy; 2025 Tayef. Made with <span style="color:#00e6ff;">&#10084;</span> | 
+        <a href="mailto:tayef@example.com" style="color:#00e6ff;text-decoration:none;">Contact Me</a>
+    </footer>
+</body>
+</html>
