@@ -18,18 +18,21 @@
             background-repeat: repeat, no-repeat;
         }
         .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
             background: linear-gradient(135deg, rgba(60, 101, 87, 0.95), rgba(9, 34, 23, 0.95));
             box-shadow: 0 2px 8px rgba(16, 191, 112, 0.118);
             position: sticky;
             top: 0;
             z-index: 100;
+            padding: 0.5rem 0;
         }
-        .navbar .logo {
-            font-size: 1.7rem;
+        .navbar-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2.5rem;
+        }
+        .logo {
+            font-size: 1.3rem;
             font-weight: bold;
             color: #00ff9d;
             letter-spacing: 2px;
@@ -119,21 +122,21 @@
             }
             .navbar {
                 flex-direction: column;
-                gap: 1rem;
+                gap: 3rem;
             }
         }
     </style>
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">Portfolio</div>
-        <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#footer">Contact</a></li>
-        </ul>
+        <div class="navbar-content">
+            <span class="logo">Portfolio</span>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </div>
     </nav>
     <section class="hero" id="hero">
         <img src="assets/me.png" alt="Tayef" style="width:140px;height:140px;border-radius:50%;box-shadow:0 0 24px #00ff9d88;margin-bottom:1.5rem;">
