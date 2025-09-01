@@ -1,0 +1,30 @@
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: 
+                url("data:image/svg+xml;utf8,<svg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'><rect x='0' y='0' width='40' height='40' fill='none'/><path d='M 40 0 L 0 0 L 0 40' stroke='%2333ffbb' stroke-width='0.5' opacity='0.15'/></svg>"),
+                linear-gradient(135deg, #3b5640 0%, #0c2624 100%);
+            color: #222;
+            background-size: 40px 40px, cover;
+            background-repeat: repeat, no-repeat;
+        }
+        .footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: #123020;
+            color: #fff;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            margin-top: 3rem;
+        }
+        /* Responsive */
+        @media (max-width: 900px) {
+            .cards-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbar {
+                flex-direction: column;
+                gap: 3rem;
+            }
+        }

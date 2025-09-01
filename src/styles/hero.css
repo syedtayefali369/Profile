@@ -1,0 +1,36 @@
+.hero {
+            text-align: center;
+            padding: 5rem 2rem 3rem 2rem;
+             background: 
+                url("data:image/svg+xml;utf8,<svg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'><rect x='0' y='0' width='40' height='40' fill='none'/><path d='M 40 0 L 0 0 L 0 40' stroke='%2333ffbb' stroke-width='0.5' opacity='0.15'/></svg>"),
+                linear-gradient(135deg, #3b5640 0%, #0c2624 100%);
+            color: #222;
+            background-size: 40px 40px, cover;
+            background-repeat: repeat, no-repeat; color: #fff;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+            text-shadow: 0 0 12px #fff8;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+        }
+        .hero .cta-btn {
+            padding: 0.8rem 2rem;
+            font-size: 1.1rem;
+            background: #00ff95;
+            color: #0b2918;
+            border: none;
+            border-radius: 30px;
+            box-shadow: 0 0 16px #00e6ff88;
+            cursor: pointer;
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+        .hero .cta-btn:hover {
+            background: #00c37f;
+            box-shadow: 0 0 24px #00ff84cc;
+        }
